@@ -1,0 +1,59 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+main {
+  margin: 2rem 0;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.accomplishments-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.accomplishments-list li {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.accomplishments-list li:before {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #28a745;
+}
