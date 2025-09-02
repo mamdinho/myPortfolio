@@ -4,43 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed Suleiman's Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="container-fluid">
-    <div class="row align-items-center text-center">
-      <div class="col">
-        <img src="./profile.JPG" alt="Mohammed Suleiman" class="profile-pic">
-        <h1>Mohammed Suleiman Mohamed Al-Falahy</h1>
-        <h2>Cloud Developer | Free-Lancer | FITNESS COACH </h2>
-      </div>
+  <!-- Header / Hero -->
+  <header>
+    <img src="./profile.JPG" alt="Mohammed Suleiman" class="profile-pic">
+    <h1 class="fw-bold">Mohammed Suleiman Mohamed Al-Falahy</h1>
+    <h2 class="fw-light">Cloud Developer | Freelancer | FullStack Engineer</h2>
+    <div class="mt-4">
+      <a href="https://mypublic-bucket.s3.ca-central-1.amazonaws.com/UpdatedCV.pdf" target="_blank" class="btn btn-light btn-lg me-2"><i class="bi bi-file-earmark-text"></i> Resume</a>
+      <a href="https://mypublic-bucket.s3.ca-central-1.amazonaws.com/Transcript.pdf" target="_blank" class="btn btn-outline-light btn-lg"><i class="bi bi-journal-text"></i> Transcript</a>
     </div>
   </header>
+
+  <!-- About Section -->
   <main class="container">
-    <section id="about">
-      <h3>About Me</h3>
-      <p>
-        I am a FullStack Cloud Engineer who specializes in Cloud Development, Web Development, and Implementing APIs using NodeJS, Python, and other frameworks. I work with automating Data Migration from the Cloud to Relational Databases or vice versa, dealing with large structures of data and optimizing Network performance by using the latest and best industry standards. I am also in charge of maintaining/implementing Backend Application's security system to avoid any unwanted users or leaked information. In addition to my technical skills, I am a bodybuilding competitor and I help Train people to achieve their Fitness Goals. I am a passionate Entrepreneur and my roots are from TANZANIA, OMAN, PALESTINE, LEBANON. This duniya is temporary keep our brothers and sisters who are suffering during this WAR in your prayers.
-         <br><a href="https://mypublic-bucket.s3.ca-central-1.amazonaws.com/UpdatedCV.pdf" target="_blank">View my Resume </a>| 
-          <a href="https://mypublic-bucket.s3.ca-central-1.amazonaws.com/Transcript.pdf" target="_blank">View my Transcript</a>
-      </p>
+    <section id="about" class="row align-items-center">
+      <div class="col-md-7">
+        <h3 class="mb-3">About Me</h3>
+        <p>
+          I am a FullStack Cloud Engineer specializing in Cloud Development, Web Development, and implementing APIs using NodeJS, Python, and other frameworks. I work on automating Data Migration between Cloud and Relational Databases, handling large datasets, and optimizing Network performance with the latest industry standards.
+        </p>
+        <p>
+          I also manage backend application security to prevent unauthorized access and leaks. Beyond tech, I am a certified Personal Trainer helping people achieve their fitness goals.
+        </p>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="./profile.JPG" class="img-fluid rounded-3 shadow" alt="About Mohammed">
+      </div>
     </section>
+
+    <!-- Accomplishments Section -->
     <section id="accomplishments">
-      <h3>Accomplishments</h3>
-      <ul class="accomplishments-list">
-        <li>AWS Cloud Developer Certified</li>
-        <li>ISSA Certfied Trainer & Coach</li>
-        <li>President's Honors List Award 4.0 GPA</li>
-        <li>National Physique Competition - 2nd Place (2021)</li>
-      </ul>
+      <h3 class="text-center mb-5">Accomplishments</h3>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card text-center h-100 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-cloud-check display-4 text-primary"></i>
+              <h5 class="mt-3">AWS Cloud Developer Certified</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center h-100 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-heart-pulse display-4 text-danger"></i>
+              <h5 class="mt-3">ISSA Certified Trainer & Coach</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center h-100 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-award display-4 text-success"></i>
+              <h5 class="mt-3">President's Honors List Award - 4.0 GPA</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center h-100 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-trophy display-4 text-warning"></i>
+              <h5 class="mt-3">National Physique Competition - 2nd Place (2021)</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="container-fluid text-center">
-    <p>&copy; 2024 Mohammed Suleiman. All rights reserved. Connect with me on <a href="https://www.linkedin.com/in/mohammed-al-falahy-a19ab7178/" target="_blank">LinkedIn</a>.</p>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2024 Mohammed Suleiman. All rights reserved.</p>
+    <div>
+      <a href="https://www.linkedin.com/in/mohammed-al-falahy-a19ab7178/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="mailto:example@email.com"><i class="bi bi-envelope"></i></a>
+    </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-7+zcn7/IqJ95wo16oMtfsKb4a1MoK4yNx3+Uwk/vk3uqLIqdsAZW/5XtcXzRlcV+" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
