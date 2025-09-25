@@ -101,7 +101,7 @@
       </div>
     </section>
 
-    <!-- Projects Section (NEW) -->
+    <!-- Projects Section (UPDATED) -->
     <section id="projects" class="pt-5">
       <h3 class="text-center mb-4">Projects</h3>
       <p class="text-center text-muted mb-5">
@@ -114,8 +114,8 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card project-card h-100 shadow-sm">
             <a class="project-cover" href="https://main.d1f7glx4w7rd7j.amplifyapp.com/" target="_blank" rel="noopener">
-              <!-- Use your own screenshot if you have it (e.g., ./projects/car-showroom.png) -->
-              <img src="./Car-Showroom.png" class="card-img-top" alt="Live app screenshot">
+              <!-- Use your own screenshot if you have it (e.g., ./Car-Showroom.png) -->
+              <img src="./Car-Showroom.png" class="card-img-top" alt="Car Showroom app screenshot">
             </a>
             <div class="card-body d-flex flex-column">
               <div class="d-flex align-items-center gap-2 mb-2">
@@ -125,13 +125,12 @@
               </div>
               <h5 class="card-title mb-2">Car Showroom (React + TypeScript + AWS Amplify)</h5>
               <p class="card-text text-muted flex-grow-1">
-                A responsive, production-deployed Web app hosted on AWS Amplify. Focus on clean UI, fast
+                A responsive, production-deployed web app hosted on AWS Amplify. Focus on clean UI, fast
                 loads, and cloud-native CI/CD.
               </p>
-              <div class="d-flex gap-2">
+              <div className="d-flex gap-2">
                 <a href="https://main.d1f7glx4w7rd7j.amplifyapp.com/" target="_blank" rel="noopener"
                   class="btn btn-primary"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
-                <!-- Optional: add your repo link when ready -->
                 <a href="https://github.com/mamdinho/car-showroom.git" target="_blank" rel="noopener"
                   class="btn btn-outline-secondary"><i class="bi bi-github"></i> Code</a>
               </div>
@@ -144,8 +143,40 @@
           </div>
         </div>
 
-        <!-- Duplicate block for more future projects -->
-        <!--
+        <!-- Project Card 2 — Budget Tracker -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm">
+            <a class="project-cover" href="https://main.d2fehl27o99rs2.amplifyapp.com/" target="_blank" rel="noopener">
+              <!-- Replace with your screenshot file when ready -->
+              <img src="./Budget-Tracker.png" class="card-img-top" alt="Budget Tracker app screenshot">
+            </a>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge rounded-pill text-bg-primary">React</span>
+                <span class="badge rounded-pill text-bg-warning">Node.js</span>
+                <span class="badge rounded-pill text-bg-success">PostgreSQL</span>
+              </div>
+              <h5 class="card-title mb-2">Budget Tracker (React + Node + PostgreSQL + Cognito)</h5>
+              <p class="card-text text-muted flex-grow-1">
+                Full-stack personal finance app with Cognito authentication, REST API, filtering, charts, and CSV export.
+                Frontend is hosted on AWS Amplify; backend runs on Railway with a PostgreSQL database.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="https://main.d2fehl27o99rs2.amplifyapp.com/" target="_blank" rel="noopener"
+                  class="btn btn-primary"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+                <a href="https://github.com/mamdinho/budget-tracker.git" target="_blank" rel="noopener"
+                  class="btn btn-outline-secondary"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+              <small class="text-muted">
+                Amplify frontend • Railway + PostgreSQL backend • Cognito auth
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicate block for more future projects
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card project-card h-100 shadow-sm">
             <a class="project-cover" href="https://your-app-link" target="_blank" rel="noopener">
